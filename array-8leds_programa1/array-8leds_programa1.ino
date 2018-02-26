@@ -1,5 +1,5 @@
 /**********************************************************************************
- montaje de 8 leds que se encienden y se apagan simultaneamente  
+ montaje de 8 leds que se encienden y se apagan simultaneamente   
 **********************************************************************************/
 
 const int led0 = 5;          // dar nombre al pin 5 de l’Arduino
