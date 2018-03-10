@@ -1,6 +1,6 @@
-/************************************************* *********************************
-al pulsar el pulsador del pin 2 realiza el programa del ejercicio 1 y sino se pulsa 
-el pulsador del PIN2 realiza el programa del ejercicio 2
+/**********************************************************************************
+Al pulsar el pulsador conectado al pin 2, realiza el programa del ejercicio 1 
+y al dejar de pulsar, realiza el programa del ejercicio 2
 *********************************************** ***********************************/
 
 const int led0 = 5;          // dar nombre al pin 5 del Arduino
@@ -29,7 +29,7 @@ void setup ()
 
 void loop ()
 {
-if (digitalRead (buttonPin) == 0)
+if (digitalRead (buttonPin) == 1)
   {   
   digitalWrite(led0, HIGH);    // poner a 5V el pin 5
   digitalWrite(led1, HIGH);    // poner a 5V el pin 6
@@ -51,8 +51,7 @@ if (digitalRead (buttonPin) == 0)
   digitalWrite(led7, LOW);     // poner a 0V el pin 12
   delay(500);                  // milisegundos que los leds se quedan apagados
   }
-  
-  
+
 else
 {
   digitalWrite(led0, HIGH);    // poner a 5V el pin 5
